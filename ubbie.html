@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+.center {
+    text-align: center;
+    
+}
+</style>
+
+
+
+
+<div class="center">
+  <p style="font-size:36px; color:#0000FF">Ubbi Dubbi Translator</p>
+</div>
+
+
+
+<style>
+img {
+    display: block;
+    margin: 0 auto;
+}
+</style>
+<img src="ubi.jpg"  style="width:20%">
+</head>
+
+
+<script>
+function tr() {
+var str=document.getElementById("monkey").value;
+var inUD="";
+	
+for(var z=0;z< str.length;z++){
+	var mychar= str.charAt(z);
+	if(mychar=="a"||mychar=="e"||mychar=="i"||mychar=="u"||mychar=="o"){
+	inUD=inUD + "ub";
+	}
+	
+	inUD=inUD+str.charAt(z);
+}
+
+	document.getElementById("result").innerHTML= inUD;
+
+}
+</script>
+<body>
+<p style="font-size:24px;color:	#0000FF">Enter English</p><input type="text" id="monkey"><br>
+<br>
+
+<button type="button" onclick="tr()">Translate</button>
+<p id="result"></p> 
+
+
+<img src="z.jpg"  style="width:50%">
+
+
+<style>
+body {
+	background-image: url("b.jpg");
+	}
+</style>
+
+<img src="du.jpg"  style="width:304px;height:228px;">
+</body>
+</html>
